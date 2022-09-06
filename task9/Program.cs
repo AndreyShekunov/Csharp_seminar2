@@ -7,16 +7,16 @@
 
 Random rand = new Random();
 int number = rand.Next(10, 100);
-Console.WriteLine(number);
+Console.WriteLine($"Сгенерировалось случайное число {number}");
 
 int digital2 = number % 10;
 int digital1 = number / 10;
 
 if(digital1 > digital2)
 {
-    Console.WriteLine(digital1);
+    Console.WriteLine($"Наибольшая цифра числа {digital1}");
 }
 else
 {
-    Console.WriteLine(digital2);
+    Console.WriteLine($"Наибольшая цифра числа {digital2}");
 }
